@@ -7,6 +7,7 @@
     list-style: none;
     text-decoration: none;
 }
+
 header{
     position: fixed;
     width: 100%;
@@ -180,6 +181,9 @@ section {
     right: 25px;
     
     font-size: 20px;
+}
+.like-icon:hover{
+        color: #EE1C47;
 }
 .rating,.price{
     margin-left: 25px;
