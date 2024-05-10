@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Jost", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right:0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+.sticky{
+    background: #fff;
+    padding: 5px 10%;
+    box-shadow: 0px 0px 10px rgba(0 0 0 /10%);
+}
+.logo img{
+    max-width: 150px;
+    height: auto;
+}
+.navmenu{
+    display: flex;
+    
+}
+.navmenu a{
+    color:#2c2c2c;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.navmenu a:hover{
+    color: #EE1C47;
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-icon i{
+    margin-right: 20px;
+    transition: all .42s ease;
+    color: #2c2c2c;
+    font-size: 25px;
+    font-weight: 400;
+
+}
+.nav-icon i:hover{
+    transform: scale(1.2);
+    color: #EE1C47;
+}
+
+#menu-icon{
+    z-index: 10001;
+    cursor: pointer;
+    font-size: 35px;
+}
+section {
+    padding: 5% 10%;
+   
+  
+}
+
+.main-home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D);
+    background-position: left center; 
+    background-size: cover;
+  
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    margin-top: 20px;
+}
+.main-txt h5{
+    color: #EE1C47;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.main-txt h1{
+    color: whitesmoke;
+    font-size: 55px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    margin:6px 0 10px;
+    font-weight: 600;
+}
+.main-txt p{
+    color: cornsilk;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.main-btn{
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid white;
+    transition: all .42s ease;
+}
+.main-btn i{
+    vertical-align: middle;
+    font-size: 30px;
+    
+}
+.down-arrow{
+    position: absolute;
+    top: 85%;
+    right:11%;
+}
+.down i {
+    font-size: 30px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding:12px 12px;
+}
+
+.center-text h2{
+    color:#111;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 50px;
+   
+}
+ .center-text span{
+    color: #EE1C47;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    gap: 5rem;  
+    
+    
+}
+
+.row{
+    position: relative;
+    transition: all .40s;
+    box-shadow: 0px 0px 10px rgba(0 0 0 /10%);
+   
+    width: 300px;
+    height: 500px;
+    
+    
+}
+.row img{
+    width: 100%;
+    height: 400px;    
+}
+
+.product-text{
+    position: absolute;
+    top: 11px;
+    left: 13px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #27b737;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+.like-icon{
+    position: absolute;
+    right: 25px;
+    
+    font-size: 20px;
+}
+.rating,.price{
+    margin-left: 25px;
+}
+.rating i{
+    color: #FF8c00;
+    font-size: 20px;
+    
+}
+.price h4{
+    color: #111;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.price p{
+    color: #151515;
+    font-size: 14px;
+    font-weight: 600;
+}
+.client-reviews{
+    background-color: #F3F4F6;
+
+}
+.reviews{
+    text-align: center;
+}
+.reviews h3{
+    color: #111;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+}
+.reviews img{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+.reviews p{
+    color: #707070;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(380px,auto));
+    gap: 1rem;
+    padding: 5% 10%;
+    
+
+}
+footer
+{   background: #F3F4F6;
+}
+.about-website img{
+    width:150px;
+    height:100px;
+}
+.contact p {
+    color: #707070;
+    font-size: 13px;
+    font-weight: 600;
+    
+    line-height: 30px;
+}
+.contact h5{
+    font-size: 15px;
+    margin-top: 20px;
+}
+.support a{
+    color: #2c2c2c;
+    line-height: 40px;
+    align-items: center;
+   
+    
+}
+.support a:hover{
+    color: #EE1C47;
+    transform: scale(1.2);
+}
+.support h5{
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+
+.websites h5{
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+   
+}
+.websites i {
+    font-size: 25px;
+    font-weight: 700;
+    
+    text-align:center;
+    
+}
+.websites i:hover{
+    color: #EE1C47;
+    transform: scale(1.2);
+}
+.update-heading h3{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.card img{
+    width:330px;
+    height: 200px;
+    border-radius: 5px;
+}
+.updates {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px,auto));
+    gap: 2rem;
+    
+}
+.updates h5{
+    color: #636872;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+
+}
+.updates p {
+    color: #636872;
+    font-size: 15px;
+    max-width: 330px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.updates a{
+    font-size: 15px;
+    color: #111;
+    font-weight: 600;
+}
+@media(max-width:890px){
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        line-height: 30px;
+        position: relative;
+    }
+    .down-arrow{
+        margin-top: 200px;
+    }
+   .about-website{
+    margin-left: 150px;
+   }
+
+}
+@media(max-width:630px){
+    .main-txt h1{
+        font-size: 50px;
+        transition: .4s;
+    }
+    .main-txt p {
+        font-size: 18px;
+    }
+    .main-btn{
+        padding: 10px 20px;
+    }
+    .support{
+        text-align: center;
+    }
+    .websites{
+        text-align: center;
+    }
+    .contact{
+        text-align: center;
+    }
+    .about-website img{
+        align-items: center;
+    }
+}
